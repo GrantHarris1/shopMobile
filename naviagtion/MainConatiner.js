@@ -41,16 +41,16 @@ export default function MainContainer(){
                     }
 
                     return <Ionicons name={iconName} size={size} color={color} />
-
+                    
                 },
+            tabBarActiveTintColor:'#712F51',
+            tabBarInactiveTintColor:'grey',
+            tabBarLabelStyle:{paddingBottom: 10, fontSize: 12 },
+            tabBarStyle: {paddingBottom:10}
+            
             })}
-            tabBarOptions={{
-                activeTintColor: 'tomato',
-                inactiveTintColor:'grey',
-                labelStyle: {paddingBottom: 10, fontSize: 10 },
-                style: {padding: 10, height: 70}
 
-            }}
+            
             >
                 <Tab.Screen name= {homeName} component={HomeScreen} />
                 <Tab.Screen name= {toolsName} component={ToolsScreen} />
